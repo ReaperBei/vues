@@ -1,0 +1,123 @@
+.layout {
+    .tab_header {
+        color: #333;
+        padding: 0 5px 0 5px;
+        height: 45px;
+        line-height: 45px;
+        border: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        background: #f3f3f3;
+    }
+    .operate {
+        span {
+            font-size: 14px;
+            margin-right: 20px;
+            margin-right: 20px;
+            color: #409eff;
+            cursor: pointer;
+        }
+    }
+    /* 处理多个表格共用一个表头时，表头处出现多余空行的问题 （label置空后还是占据空间问题） */
+    .tab-thead-style {
+        thead {
+            display: none;
+        }
+    }
+}
+
+.table-item {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    display: flex;
+    .item {
+        overflow: hidden;
+        width: 200px;
+        text-indent: 10px;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        .list {
+            width: 200px;
+            display: flex;
+            .text {
+                width: 100px;
+            }
+        }
+        .list-box{
+            display: flex;
+            align-items: center;
+            &:first-child{
+                text-indent: 0;
+            }
+            .text-coding{
+                width: 111px;
+            }
+            .coding-name{
+                text-indent: 10px;
+            }
+        }
+    }
+    .item-list{
+        width: 150px;
+    }
+    .datalist-box{
+        display: flex;
+        width:813px;
+        text-indent: 5px;
+        .list{
+            width:813px;
+        }
+    }
+    .item-box{
+        width: 810px;
+        text-indent: 5px;
+        .list{
+            width: 810px;
+            text-indent: 5px;
+            .text{
+                width: 338px;
+            }
+        }
+    }
+    .handle-box{
+        display: flex;
+        flex-direction: column;
+        .handle-btn{
+            color: #409eff;
+            width: 70px;
+            height: 66px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            .btn{
+                cursor: pointer;
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+    .datalistBox{
+        width: 814px !important;
+        text-indent:  6px;
+        .list-coding{
+            text-indent: 13px;
+        }
+    }
+    .datalist {
+        flex-wrap: wrap;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        padding: 0;
+        .list {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .list:last-child {
+            border-bottom: none;
+        }
+    }
+}
